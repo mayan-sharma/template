@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Templates</title>
+  </head>
+  <body>
+    <div id="full-nav">
+      <h1>Yes</h1>
+      <span onclick="closeNav()">
+        <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+        &times
+      </span>
+    </div>
+    <div class="nav">
+      <h1>Templates</h1>
+      <span onclick="openNav()">
+        <i class="fa fa-bullseye" aria-hidden="true"></i>
+      </span>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div class="text">
+          <h1>GET MORE SOMETHING</h1>
+          <p>Considering the fact of the inevitable.</p>
+          <button class="button">GET MORE</button>
+        </div>
+        <div>
+          <img src="css/assets/02.png" />
+        </div>
+      </div>
+      <div class="grid">
+        <div class="text">
+          <h1>HAVE AN IDEA ?</h1>
+          <p>Feel free to contact and discuss your ideas.</p>
+          <button class="button">Contact</button>
+        </div>
+        <div>
+          <img src="css/assets/08.png" />
+        </div>
+      </div>
+      <div class="grid">
+        <div class="text">
+          <h1>ABOUT US</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation
+          </p>
+        </div>
+        <div>
+          <img src="css/assets/06.png" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("full-nav").style.height = "100vh";
+      }
+      function closeNav() {
+        document.getElementById("full-nav").style.height = "0";
+      }
+    </script>
+  </body>
+</html>
